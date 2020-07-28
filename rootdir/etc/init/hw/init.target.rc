@@ -67,9 +67,21 @@ on init
     write /sys/block/sda/queue/iosched/slice_idle 0
     write /sys/block/sda/queue/nr_requests 256
 
-    #Moving to init as this is needed for qseecomd
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    wait /dev/block/platform/${ro.boot.boot_devices}
+    symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
+
+    # to access UFS/eMMC sysfs directly
+    symlink /sys/devices/platform/${ro.boot.boot_devices} /dev/sys/block/bootdevice
+
+    # Disable UFS clock scaling
+    write /dev/sys/block/bootdevice/clkscale_enable 0
+    # Disable UFS auto_hibern8
+    write /dev/sys/block/bootdevice/auto_hibern8 0
+    # Disable UFS clock gating
+    write /dev/sys/block/bootdevice/clkgate_enable 0
+
+    # start qseecomd early as we mount system/ vendor/ early
+    # vold needs keymaster that needs qseecomd
     start vendor.qseecomd
     start keymaster-4-0
 
