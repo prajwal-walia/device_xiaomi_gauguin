@@ -86,6 +86,10 @@ on init
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
     write /dev/stune/camera-daemon/schedtune.boost 0
 
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on fs
     start hwservicemanager
     mount_all --early
