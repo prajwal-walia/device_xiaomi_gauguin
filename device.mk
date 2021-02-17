@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext \
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
