@@ -163,6 +163,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+    
+# Copy stock APN config as lineage one seams to be quite broken and outdated
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ril/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml \
+    $(LOCAL_PATH)/ril/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/spn-conf.xml
 
 # Vendor overlay
 PRODUCT_COPY_FILES += \
