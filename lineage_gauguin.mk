@@ -12,7 +12,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 SAKURA_OFFICIAL := true
 SAKURA_BUILD_TYPE := gapps
 SAKURA_MAINTAINER := Prajwal&&Nitish
-SAKURA_OPLAUNCHER := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
