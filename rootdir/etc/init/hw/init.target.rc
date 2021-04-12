@@ -53,6 +53,9 @@ on init
     start vendor.qseecomd
     start keymaster-4-0
 
+on property:ro.boot.hwversion=*
+    setprop vendor.boot.hwversion ${ro.boot.hwversion}
+
 on early-fs
     start vold
 
