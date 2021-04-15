@@ -1,2 +1,3 @@
 permissive system_server;
 get_prop(system_server, vendor_camera_prop)
+allow system_server sysfs_battery_supply:file rw_file_perms;
