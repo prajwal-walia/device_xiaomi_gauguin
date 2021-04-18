@@ -13,6 +13,7 @@ SAKURA_OFFICIAL := true
 SAKURA_BUILD_TYPE := gapps
 SAKURA_MAINTAINER := Prajwal&&Nitish
 TARGET_BOOT_ANIMATION_RES := 1080
+IS_PHONE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_gauguin
