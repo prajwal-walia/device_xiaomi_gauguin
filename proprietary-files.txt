@@ -14,6 +14,22 @@ system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 
+# DPM
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+system_ext/bin/dpmd
+system_ext/etc/dpm/dpm.conf
+system_ext/etc/init/dpmd.rc
+system_ext/etc/permissions/com.qti.dpmframework.xml
+system_ext/etc/permissions/dpmapi.xml
+system_ext/framework/com.qti.dpmframework.jar
+system_ext/framework/dpmapi.jar
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib64/vendor.qti.diaghal@1.0.so
+system_ext/lib64/libdpmctmgr.so
+system_ext/lib64/libdpmfdmgr.so
+system_ext/lib64/libdpmframework.so
+system_ext/lib64/libdpmtcm.so
+
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
