@@ -10,6 +10,10 @@ system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 
+# Audio FX modules
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
+
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.0-java.jar
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar
