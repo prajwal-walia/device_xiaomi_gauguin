@@ -62,10 +62,6 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# AID/fs configs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
