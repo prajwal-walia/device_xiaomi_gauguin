@@ -14,6 +14,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
+# CNE
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
