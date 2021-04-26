@@ -64,3 +64,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
+
+# WFD
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.latch_unsignaled=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
