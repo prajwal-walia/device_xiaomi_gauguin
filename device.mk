@@ -188,6 +188,8 @@ PRODUCT_PACKAGES += \
 
 # WFD
 PRODUCT_PACKAGES += \
+    libminijail \
+    libavservices_minijail \
     libdisplayconfig.qti \
     libaacwrapper \
     libnl
