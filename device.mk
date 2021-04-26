@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
 
 # WFD
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
     libaacwrapper \
     libnl
 
