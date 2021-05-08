@@ -82,6 +82,7 @@ debug.egl.hw=0
 debug.sf.latch_unsignaled=1
 debug.mdpcomp.logs=0
 vendor.gralloc.disable_ubwc=0
+vendor.display.disable_rotator_downscale=1
 vendor.display.disable_scaler=0
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
