@@ -145,7 +145,8 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     telephony \
-    wfd
+    wfd \
+    perf
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
