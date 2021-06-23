@@ -152,6 +152,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
     telephony \
     wfd
 
