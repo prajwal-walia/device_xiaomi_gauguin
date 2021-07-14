@@ -25,6 +25,7 @@ allow hal_power_default {
   lnk_file
 } rw_file_perms;
 
+allow hal_power_default vendor_sysfs_graphics:file r_file_perms;
 allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
 
 # Rule for hal_power_default to access graphics composer process
