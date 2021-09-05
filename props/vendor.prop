@@ -247,6 +247,7 @@ vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # Time
 persist.timed.enable=true
+persist.vendor.delta_time.enable=true
 
 # USB
 vendor.usb.diag.func.name=diag
