@@ -36,6 +36,9 @@ TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_BOOTLOADER_BOARD_NAME := gauguin
 TARGET_NO_BOOTLOADER := true
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
