@@ -258,13 +258,13 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# IDC
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/usr/idc/,$(TARGET_COPY_OUT_SYSTEM)/usr/idc)
-
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+# IDC
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/usr/idc/,$(TARGET_COPY_OUT_SYSTEM)/usr/idc)
 
 # IFAA manager
 PRODUCT_PACKAGES += \
@@ -314,9 +314,13 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/usr/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
-# Keystore
+# Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
 
 # Lights
 PRODUCT_PACKAGES += \
