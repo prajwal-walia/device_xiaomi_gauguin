@@ -18,10 +18,6 @@
     <!-- Ambient settings -->
     <string name="ambient_enable">Use ambient display</string>
 
-4    <!-- Dirac -->
-    <string name="dirac_tile_on">On</string>
-    <string name="dirac_tile_off">Off</string>
-
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
     <string name="dirac_headset_in_ear_2013">Mi In-Ear (2013)</string>
