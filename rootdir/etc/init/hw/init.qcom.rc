@@ -31,6 +31,7 @@ import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.nfc.rc
 import /vendor/etc/init/hw/init.gauguin.rc
 import /vendor/etc/init/hw/init.gauguin.camera.rc
+import /vendor/etc/init/hw/init.gauguin.fingerprint.rc
 
 on early-init
   # create symlink for vendor mount points

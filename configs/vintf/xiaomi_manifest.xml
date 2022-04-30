@@ -1,11 +1,6 @@
 <manifest version="2.0" type="device" target-level="5">
     <kernel target-level="4"/>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.fingerprintextension</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IXiaomiFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMiFxTunnel/default</fqname>
