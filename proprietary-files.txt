@@ -1241,7 +1241,6 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/libssccalapi.so
 vendor/lib/libultrasound.so
 vendor/lib/sensors.ssc.so
-vendor/lib/sensors.touch.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
@@ -1257,7 +1256,6 @@ vendor/lib64/libssccalapi.so
 vendor/lib64/libultrasound.so
 vendor/lib64/sensors.elliptic.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/sensors.touch.so
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libscveCommon.so
