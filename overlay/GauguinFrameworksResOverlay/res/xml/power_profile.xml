@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
+  <!-- Most values are the incremental current used by a feature,
+       in mA (measured at nominal voltage).
+       The default values are deliberately incorrect dummy values.
+       OEM's must measure and provide actual values before
+       shipping a device.
+       Example real-world values are given in comments, but they
+       are totally dependent on the platform and can vary
+       significantly, so should be measured on the shipping platform
+       with a power meter. -->
     <item name="none">0</item>
+
+  <!-- Display related values. -->
+  <!-- Average battery current draw of display0 while on without backlight.
+       There must be one of these for each display, labeled:
+       screen.on.display0, screen.on.display1, etc...
+       Each display suffix number should match it's ordinal in its display device config.
+  -->
     <item name="screen.on.display0">82.43</item>
+
+  <!-- Average battery current draw of the backlight at full brightness.
+       The full current draw of display N at full brightness should be the sum of screen.on.displayN
+       and screen.full.displayN
+       There must be one of these for each display, labeled:
+       screen.full.display0, screen.full.display1, etc...
+       Each display suffix number should match it's ordinal in its display device config.
+  -->
     <item name="screen.full.display0">337.31</item>
+
+  <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
+    <item name="battery.capacity">4820</item>
+
     <item name="bluetooth.active">3.79</item>
     <item name="bluetooth.on">0.45</item>
     <item name="wifi.on">0.25</item>
@@ -13,20 +41,39 @@
     <item name="camera.flashlight">94.44</item>
     <item name="camera.avg">768.51</item>
     <item name="gps.on">77.51</item>
+
+
+  <!-- Radio related values. For modems without energy reporting support in firmware, use
+       radio.active, radio.scanning, and radio.on. -->
     <item name="radio.active">197.88</item>
     <item name="radio.scanning">90.13</item>
     <array name="radio.on">
         <value>1.16</value>
         <value>2.16</value>
     </array>
+
+  <!-- Cellular modem related values. Default is 0.-->
     <item name="modem.controller.idle">0</item>
     <item name="modem.controller.rx">0</item>
     <item name="modem.controller.tx">0</item>
     <item name="modem.controller.voltage">0</item>
+
+  <!-- A list of heterogeneous CPU clusters, where the value for each cluster represents the
+       number of CPU cores for that cluster.
+       Ex:
+       <array name="cpu.clusters.cores">
+        <value>4</value> // cluster 0 has cpu0, cpu1, cpu2, cpu3
+        <value>2</value> // cluster 1 has cpu4, cpu5
+       </array> -->
     <array name="cpu.clusters.cores">
         <value>6</value>
         <value>2</value>
     </array>
+
+  <!-- Different CPU speeds for cluster 0 as reported in
+      /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state.
+      There must be one of these for each cluster, labeled:
+      cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
     <array name="cpu.core_speeds.cluster0">
         <value>300000</value>
         <value>576000</value>
@@ -39,6 +86,10 @@
         <value>1708800</value>
         <value>1804800</value>
     </array>
+
+  <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
+       Like cpu.speeds.cluster0, there must be one of these present for
+       each heterogeneous CPU cluster. -->
     <array name="cpu.core_power.cluster0">
         <value>23.28</value>
         <value>25.6</value>
@@ -51,6 +102,7 @@
         <value>56.26</value>
         <value>60.31</value>
     </array>
+
     <array name="cpu.core_speeds.cluster1">
         <value>300000</value>
         <value>787200</value>
@@ -65,6 +117,7 @@
         <value>2131200</value>
         <value>2208000</value>
     </array>
+
     <array name="cpu.core_power.cluster1">
         <value>43.71</value>
         <value>80.42</value>
@@ -79,14 +132,27 @@
         <value>386.18</value>
         <value>426.03</value>
     </array>
+
+  <!-- Additional power consumption by CPU excluding cluster and core when
+       running -->
     <item name="cpu.awake">9.42</item>
+  <!-- Current when CPU is idle -->
     <item name="cpu.idle">5.34</item>
-    <item name="battery.capacity">4820</item>
+
+  <!-- Wifi related values. -->
+  <!-- Idle Receive current for wifi radio in mA. 0 by default-->
     <item name="wifi.controller.idle">0</item>
+  <!-- Rx current for wifi radio in mA. 0 by default-->
     <item name="wifi.controller.rx">0</item>
+  <!-- Tx current for wifi radio in mA. 0 by default-->
     <item name="wifi.controller.tx">0</item>
+  <!-- Current at each of the wifi Tx levels in mA. The number of tx levels varies per device
+       and is available only of wifi chipsets which support the tx level reporting. Use
+       wifi.tx for other chipsets. none by default -->
     <array name="wifi.controller.tx_levels" />
+  <!-- Operating volatage for wifi radio in mV. 0 by default-->
     <item name="wifi.controller.voltage">0</item>
+
     <array name="wifi.batchedscan">
         <value>.0002</value>
         <value>.002</value>
