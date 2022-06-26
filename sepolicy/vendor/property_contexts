@@ -8,11 +8,11 @@ ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-persist.vendor.fpc.                             u:object_r:vendor_fp_prop:s0
-persist.vendor.sys.fp.                          u:object_r:vendor_fp_prop:s0
-ro.hardware.fp                                  u:object_r:vendor_fp_prop:s0
-vendor.fps_hal.                                 u:object_r:vendor_fp_prop:s0
-ro.boot.fpsensor                                u:object_r:vendor_fp_prop:s0
+persist.vendor.fpc.                             u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                          u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp                                  u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                                 u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                                u:object_r:vendor_fingerprint_prop:s0
 
 # FM Radio
 ro.vendor.fm.                                   u:object_r:vendor_fm_prop:s0
