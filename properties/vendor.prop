@@ -101,6 +101,7 @@ bluetooth.hardware.power.tx_cur_ma=3
 camera.disable_zsl_mode=true
 #enable camera read sensors data
 persist.camera.gyro.disable=0
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
