@@ -17,6 +17,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
 persist.dbg.wfc_avail_ovr=1
 
+# LMK
+ro.config.low_ram=false
+
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
