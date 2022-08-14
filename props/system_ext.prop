@@ -10,3 +10,6 @@ persist.rmnet.data.enable=true
 
 # NFC
 ro.nfc.port=I2C
+
+# NTP
+persist.backup.ntpServer=0.pool.ntp.org
