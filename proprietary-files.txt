@@ -179,6 +179,16 @@ vendor/lib64/libsoc_helper.so|cdd194a76c1ff4836411babeb329090c4eae8d3b
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|52b83b6f371a49d866276aabc5d6bda4faa400b6
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|8d098cef4c4442f9aa2c64389be5eba32003dcce
 
+# Bluetooth (LDAC & LHDC)
+system/lib/libldacBT_abr.so
+system/lib/libldacBT_enc.so
+system/lib/liblhdcBT_enc.so
+system/lib/liblhdc.so
+system/lib64/libldacBT_abr.so
+system/lib64/libldacBT_enc.so
+system/lib64/liblhdcBT_enc.so
+system/lib64/liblhdc.so
+
 # Bluetooth (aptX) - from sunfish RQ1A.201205.008
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
