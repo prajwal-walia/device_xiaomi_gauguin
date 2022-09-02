@@ -601,6 +601,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
         <interface>
+            <name>IFingerprintEngineering</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
             <name>IFingerprintSensorTest</name>
             <instance>default</instance>
         </interface>
