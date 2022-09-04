@@ -65,6 +65,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
+        <impl level="generic"></impl>
         <version>1.0</version>
         <interface>
             <name>IOmx</name>
@@ -123,6 +124,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
+        <impl level="generic"></impl>
         <version>4.0</version>
         <interface>
             <name>IKeymasterDevice</name>
@@ -132,7 +134,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <impl level="generic"></impl>
+	<version>1.0</version>
         <interface>
             <name>IGatekeeper</name>
             <instance>default</instance>
