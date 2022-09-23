@@ -27,15 +27,11 @@ vendor/lib64/libacdbrtac.so
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/loadalgo
-vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libmdsprpc.so
@@ -869,6 +865,13 @@ vendor/lib64/libsdm-diag.so|d602a56edde3fb2cf7de81d5ab18ef2ef3cf3814
 vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
 vendor/lib64/libsdmextension.so|6f2e3c020dc54286e2372979c67e9ce6ae4ebfaa
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
+
+# DSP
+vendor/bin/dspservice
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Graphics Firmware
 vendor/firmware/a615_zap.b00
