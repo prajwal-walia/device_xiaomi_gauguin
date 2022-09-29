@@ -464,7 +464,8 @@ PRODUCT_COPY_FILES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libwatermark_shim
+    libwatermark_shim \
+    libweakcount_shim
 
 # Telephony
 PRODUCT_PACKAGES += \
