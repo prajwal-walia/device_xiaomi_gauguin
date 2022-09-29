@@ -192,10 +192,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gralloc.lito \
     memtrack.lito \
-    hwcomposer.lito \
-    gralloc.default \
-    memtrack.default \
-    hwcomposer.default
+    hwcomposer.lito
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.11.vendor \
