@@ -64,10 +64,10 @@ function blob_fixup() {
             mv "${TMPDIR}/${1##*/}" "${2}"
             ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so)
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            grep -q "libpiex_shim.so" "${2}" || "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
         vendor/lib64/camera/components/com.mi.node.superlowlightraw.so)
-            "${PATCHELF}" --add-needed "libweakcount_shim.so" "${2}"
+            grep -q "libweakcount_shim.so" "${2}" || "${PATCHELF}" --add-needed "libweakcount_shim.so" "${2}"
 	    ;;
     esac
 }
