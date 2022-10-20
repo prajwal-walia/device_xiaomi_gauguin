@@ -30,7 +30,6 @@ void load_gauguin() {
     property_override("ro.product.model", "M2007J17G");
     property_override("ro.product.marketname", "Mi 10T Lite");
     property_override("ro.boot.product.hardware.sku", "nfc");
-    property_override("ro.build.version.security_patch", "2022-07-01");
 }
 
 void load_gauguinpro() {
@@ -41,7 +40,6 @@ void load_gauguinpro() {
     property_override("ro.product.model", "M2007J17C");
     property_override("ro.product.marketname", "Redmi Note 9 Pro");
     property_override("ro.boot.product.hardware.sku", "nfc");
-    property_override("ro.build.version.security_patch", "2022-07-01");
 }
 
 void load_gauguininpro() {
@@ -51,7 +49,6 @@ void load_gauguininpro() {
     property_override("ro.product.device", "gauguininpro");
     property_override("ro.product.model", "M2007J17I");
     property_override("ro.product.marketname", "Mi 10i");
-    property_override("ro.build.version.security_patch", "2022-08-01");
 }
 
 void load_miuicamera_properties() {
