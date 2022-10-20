@@ -210,6 +210,10 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM7225
 
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
