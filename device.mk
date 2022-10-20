@@ -181,6 +181,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+# Codec2
+PRODUCT_PACKAGES += \
+    libcodec2_vndk.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    libcodec2_hidl@1.0.vendor
+
 # Data Services
 $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
 
@@ -404,8 +410,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     libc2dcolorconvert \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
