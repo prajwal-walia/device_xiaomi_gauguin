@@ -456,7 +456,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libxml2
+    libxml2 \
+    libprotobuf-cpp-full
 
 # Seccomp
 PRODUCT_COPY_FILES += \
