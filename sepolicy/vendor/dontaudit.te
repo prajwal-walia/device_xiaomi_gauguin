@@ -2,6 +2,9 @@
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;
 
+# untrusted_app shouldn't be allowed to read SELinux status
+dontaudit untrusted_app_all selinuxfs:file read;
+
 dontaudit {
   hal_audio_default
   hal_graphics_composer_default
@@ -18,5 +21,12 @@ dontaudit {
   vendor_sensors_qti
 } vendor_diag_device:chr_file rw_file_perms;
 
-# untrusted_app shouldn't be allowed to read SELinux status
-dontaudit untrusted_app_all selinuxfs:file read;
+dontaudit {
+  rild
+  vendor_hal_capabilityconfigstore_qti_default
+  vendor_hal_gnss_qti
+} vendor_pd_locater_dbg_prop:file r_file_perms;
+
+dontaudit vendor_hal_capabilityconfigstore_qti_default vendor_cap_configstore_dbg_prop:file r_file_perms;
+dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir create_dir_perms;
+dontaudit vendor_wcnss_service vendor_wifi_vendor_log_data_file:file create_file_perms;
