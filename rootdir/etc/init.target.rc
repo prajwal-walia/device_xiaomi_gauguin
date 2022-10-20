@@ -109,11 +109,6 @@ on boot
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_count
 
 #USB controller configuration
-    setprop vendor.usb.rndis.func.name "gsi"
-    setprop vendor.usb.rmnet.func.name "gsi"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss_mdm"
     setprop vendor.usb.controller a600000.dwc3
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
