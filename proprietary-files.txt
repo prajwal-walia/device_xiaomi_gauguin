@@ -1063,15 +1063,18 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
+# Perf Configs - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
+vendor/etc/perf/perfboostsconfig.xml|9652aaa71f9c5c2fdd751ca6f8cf3e25a172e78b
+vendor/etc/perf/perfconfigstore.xml|83264a65d53dfda9093ba9e60d1c35a962a047a6
+vendor/etc/perf/targetconfig.xml|5b00718848682cb642bf745ec195b09ba88160df
+vendor/etc/perf/targetresourceconfigs.xml|a4b1055bfa7d8bae174e785dba315ded2dea022f
+vendor/etc/powerhint.xml|c2b41b96efb5f917d2bce57e5371ee96e0392139
+
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
