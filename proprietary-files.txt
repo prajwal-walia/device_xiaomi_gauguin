@@ -791,8 +791,6 @@ vendor/lib/egl/libGLESv2_adreno.so|472073ac858a1e571111d1be358d3e708435a911
 vendor/lib/egl/libq3dtools_adreno.so|e50851c6d93051fec5cb6b3314edf0791a539b0d
 vendor/lib/egl/libq3dtools_esx.so|122ce1321a366c2172edb2d17fbd97ed592978bc
 vendor/lib/libadreno_utils.so|16186218eb714c7a0c0f51dd5cb65ad1beea311f
-vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
-vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
 vendor/lib/libCB.so|f32644076f477c76d8445c8fa6e84182667c4be9
 vendor/lib/libgpudataproducer.so|2f7c2e8e51fe56fc4a19540052d8d98f08740be1
 vendor/lib/libgsl.so|42ccc3ea2648c6c573b1a35f9f83f0f121346f85
@@ -807,8 +805,6 @@ vendor/lib64/egl/libGLESv2_adreno.so|957aef8788170c6a2a98c47923c973345c7ad013
 vendor/lib64/egl/libq3dtools_adreno.so|bbd2bdeb3d27461742b10490dc4d3f45379f276d
 vendor/lib64/egl/libq3dtools_esx.so|c906fa7cac4e8f99593968a9fe6c2d5b74552f3c
 vendor/lib64/libadreno_utils.so|0009a27f951d8c8e8ca645881a7bf8acd5f8afd2
-vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
-vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
 vendor/lib64/libCB.so|133263ff178e640417790b0e51c2d59eb256f7c7
 vendor/lib64/libgpudataproducer.so|73626e1a3113963cceb376ab3e742994a208698e
 vendor/lib64/libgsl.so|a7eef1364ac0f92d16f439aef623ddd1e3112e8d
@@ -976,41 +972,45 @@ vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
-# Media-legacy - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# Media-legacy - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
-vendor/etc/media_codecs_c2.xml|490211cad553ce69d536c0e55848b6a7d499260d
-vendor/etc/media_codecs_performance_c2.xml|e16b7768c91f1e15ca3ddc146a77645605a1d090
+vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a5bffc7f8e
+vendor/etc/media_codecs_c2.xml|5c2ab87923210f36952b41c043b7f05b0674d7e5
+vendor/etc/media_codecs_performance_c2.xml|916853397f85e44accae49f7e1b112c97fe12381
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e
-vendor/lib/libOmxSwVdec.so|f9445f3effd751d68b4ad23284e32517d7c7bc16
-vendor/lib/libOmxSwVencMpeg4.so|fe2576f72a02dc069baaa4950fe937b2f98ceff0
-vendor/lib/libOmxVideoDSMode.so|0771a2c2f34dc484f9b0b3625dd0a40361dec060
+vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
+vendor/lib/libOmxSwVdec.so|451e48ed0b131ec4e44194c3c8f6928037965500
+vendor/lib/libOmxSwVencMpeg4.so|85742b6565c9ec14e184d21ffc01839263ebacce
+vendor/lib/libOmxVideoDSMode.so|c4e36ec5ff61194d991ee7ac1a24998ed224b0c1
+vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
 vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
 vendor/lib/libqcodec2_core.so|e82b50bc9574436fdc8b881cb94ffa8fae409dd3
-vendor/lib/libqcodec2_utils.so|87c8ed5e4d7b03107bfc665a033de58c259e5f25
-vendor/lib/libqcodec2_platform.so|fccd9c509fbfda6a72299d90d8d680885a1238ec
+vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462
+vendor/lib/libqcodec2_platform.so|77f33c008a7b7c0b8f2b4c992b26c2da8e69fe24
 vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
-vendor/lib/libqcodec2_v4l2codec.so|ad8b3a35fa377fc903a4382c47f18fe6383d7d2c
-vendor/lib64/libOmxSwVdec.so|641ca76d8967c9ef5f7ab63009dc6c4a7d009f4e
-vendor/lib64/libOmxSwVencMpeg4.so|ca4acfce5ec2a63c96d128d923be609c1ef2b311
+vendor/lib/libqcodec2_v4l2codec.so|ffd18f2c4cfad643a3409165281cf1115488ad0a
+vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
+vendor/lib64/libOmxSwVdec.so|b43da1bd4c93c9cf560a6e33ce220c832d82b2d3
+vendor/lib64/libOmxSwVencMpeg4.so|17ac7ae89806ec4434d3404a015d3db70b3ac449
+vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
 vendor/lib64/libqcodec2_base.so|ad21dcc49bc75fdbb713e5e26eaaa1dbc46998fe
 vendor/lib64/libqcodec2_core.so|3a876b96e534f33b94cee5137779c584d9df5134
-vendor/lib64/libqcodec2_utils.so|13740eea9c62681624695eaef4e4a8bdb99f076e
-vendor/lib64/libqcodec2_platform.so|02fe8f655030343a67ecb2d6ba67809736aa65f0
+vendor/lib64/libqcodec2_utils.so|8502b4adffde21a2cfb7ea7835a3e2cc9fd8662b
+vendor/lib64/libqcodec2_platform.so|86d5616b2b16405e1e2b6671d46aabc0d64e8e2e
 vendor/lib64/libqcodec2_basecodec.so|17077854df5fdbe12a34749c59a75a4e16277e20
-vendor/lib64/libqcodec2_v4l2codec.so|d3aa201c20dac6971b2fa331f7ba577e49c75eac
+vendor/lib64/libqcodec2_v4l2codec.so|5562e49498d0949a35c8c0f0dc2f3633234b078a
 
-# Video - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
-vendor/bin/mm-vidc-omx-test|b49e651da6b45a9c739261e5d52a0d5c88a33004
--vendor/lib/libMpeg4SwEncoder.so|d3ac395fc364ae5d0003f1f787f76b8ee9ad5968
-vendor/lib/libfastcrc.so|9677b12c558025527f5675ff40179715a3125c8c
-vendor/lib/libstreamparser.so|935aabbbde4806bad2e09453c73004238d69db6f
+# Video - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/bin/mm-vidc-omx-test|6543c2d03591197011b642fcb00241740644956e
+-vendor/lib/libMpeg4SwEncoder.so|5ece5c259302a936c83f8d216540b11024d56742
+vendor/lib/libfastcrc.so|c05156b1d767218a8001d88bfec61412cac3ba79
+vendor/lib/libstreamparser.so|d34d49578573e8a95054cbff0dca057c539b113b
 vendor/lib/libswvdec.so|7d269da9b5b9b2f5e4ee3ce3b68e3725ce012ef0
 vendor/lib/libvideooptfeature.so|5fb8589deda269bd36c18f04ce84b3f317b5fd96
 vendor/lib/libvideoutils.so|8386c94816eb456f8eb78c2203da3aedd35226d1
--vendor/lib64/libMpeg4SwEncoder.so|40d8eed5d93872d4f453c0bdd562ada091046a04
+-vendor/lib64/libMpeg4SwEncoder.so|faf3705772ae55f8181bed997ac08bb9d1863abe
 vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
 vendor/lib64/libvideooptfeature.so|2f302583ff4ab892b04a649d1b3080019b588d49
 
