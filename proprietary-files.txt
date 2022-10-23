@@ -331,7 +331,6 @@ vendor/lib64/libanc_dc_base.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|6fd2292303484d15d277d666cda1542dabe76db7
 
 # CameraX
-vendor/etc/camera/camxoverridesettings.txt
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/libcamxfacialfeatures.so
 vendor/lib/libcamxfdalgo.so
