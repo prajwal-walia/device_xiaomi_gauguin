@@ -109,6 +109,13 @@ vendor/lib64/libresampler.so
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
 
+# Audio configs
+vendor/etc/audio_policy_engine_configuration.xml|ef0cdc9ac80ab1a14c279e3f73f8a2090f360bda
+vendor/etc/audio_policy_engine_default_stream_volumes_mi.xml:vendor/etc/audio_policy_engine_default_stream_volumes.xml
+vendor/etc/audio_policy_engine_product_strategies_mi.xml:vendor/etc/audio_policy_engine_product_strategies.xml
+vendor/etc/audio_policy_engine_stream_volumes_mi.xml:vendor/etc/audio_policy_engine_stream_volumes.xml
+vendor/etc/cs35l41_cal.wav
+
 # Audio Amplifier
 vendor/firmware/cs35l41-delta-rcv-handset.txt
 vendor/firmware/cs35l41-delta-rcv-handsfree.txt
