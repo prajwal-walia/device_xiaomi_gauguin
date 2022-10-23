@@ -1,5 +1,5 @@
-# All unpinned blobs are extracted from gauguinpro-user 12 SKQ1.211006.001 V13.0.6.0.SJSCNXM release-keys
-# gauguin_global: gauguin_global-user 12 SKQ1.211006.001 V13.0.4.0.SJSMIXM release-keys
+# All unpinned blobs are extracted from gauguin_global: gauguin_global-user 12 SKQ1.211006.001 V13.0.4.0.SJSMIXM release-keys
+# gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.6.0.SJSCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -451,25 +451,23 @@ vendor/lib64/camera/com.qti.sensor.gauguin_ov02b1b.so
 vendor/lib64/camera/com.qti.sensor.gauguin_ov16a1q.so
 vendor/lib64/camera/com.qti.sensor.gauguin_ov8856.so
 vendor/lib64/camera/com.qti.sensor.gauguin_s5khm2.so
-vendor/lib64/camera/com.qti.sensormodule.ofilm_s5khm2.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_hi259.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov02b1b.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov16a1q.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov8856.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_imx682.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_hi259_macro.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov02b1b_depth.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov16a1q_front.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov8856_ultra.bin
-vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin
 
-# Camera Sensors - from gauguin_global
-vendor/lib/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
-vendor/lib/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|d3ce630067db703acaaa96ce3f845ba7ed6292cf
-vendor/lib64/camera/com.qti.sensormodule.sunny_imx682.bin|8c24261a16ace9652cbfa56cc0662fc49e015017
-vendor/lib64/camera/com.qti.tuned.gauguin_sunny_imx682_wide.bin|d3ce630067db703acaaa96ce3f845ba7ed6292cf
+# Camera Sensors - from gauguin_CN
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin|c40d3218e33890dc0a8da413b87587c20a34e02c
+vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|d109a04df27c764921ba268a834b7a876fa0a05c
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin|74d522fba7c741908c796cbbbcc6305d90f6f102
+vendor/lib64/camera/com.qti.sensormodule.ofilm_s5khm2.bin|be5314d0e809e6cc994f55a37ec8e36914f42cd8
 
 # Camera (Prebuilt)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|50cbc9cf54dbda85bd343be541caade2272d5886
@@ -683,16 +681,11 @@ vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/etc/gpfspath_oem_config.xml
-vendor/lib/libbase64.so
-vendor/lib/libcppf.so
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libwvhidl.so
+vendor/lib64/libwvkeybox.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-
-# DRM (Widevine L1) - from gauguin_global
-vendor/lib/liboemcrypto.so|2c1525754f661b20bd83a9cd4ca6b56d78d88476
-vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
+vendor/lib64/liboemcrypto.so
 
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -729,11 +722,11 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# HotwordEnrollment - from V13.0.3.0.SJSINXM
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1f9513ba807bced528203f829eb9a8249e915d38
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|b53e90faf861f36c3b71f7f15f54960b1e9d6313
--system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
