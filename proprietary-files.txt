@@ -26,6 +26,7 @@ vendor/lib64/libacdbrtac.so
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/loadalgo
+vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
