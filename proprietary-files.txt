@@ -765,6 +765,7 @@ vendor/bin/xtwifi-inet-agent
 vendor/etc/cacert_location.pem
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/xtra_root_cert.pem
+vendor/etc/sec_config
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
 vendor/lib64/libdataitems.so
@@ -1123,8 +1124,10 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 # QMI
 system_ext/etc/permissions/qti_libpermissions.xml
 system_ext/etc/permissions/qti_permissions.xml
+vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qmipriod
+vendor/bin/irsc_util
 vendor/etc/init/qmipriod.rc
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
