@@ -120,6 +120,7 @@ vendor/etc/audio_policy_engine_default_stream_volumes_mi.xml:vendor/etc/audio_po
 vendor/etc/audio_policy_engine_product_strategies_mi.xml:vendor/etc/audio_policy_engine_product_strategies.xml
 vendor/etc/audio_policy_engine_stream_volumes_mi.xml:vendor/etc/audio_policy_engine_stream_volumes.xml
 vendor/etc/cs35l41_cal.wav
+vendor/etc/default_volume_tables.xml
 vendor/etc/mixer_paths.xml
 vendor/etc/mixer_paths_cdp.xml
 vendor/etc/mixer_paths_lagoonmtp.xml
