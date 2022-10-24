@@ -1,5 +1,6 @@
 # All unpinned blobs are extracted from gauguin_global: gauguin_global-user 12 SKQ1.211006.001 V13.0.4.0.SJSMIXM release-keys
 # gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.6.0.SJSCNXM release-keys
+# cupid_DEV: cupid-missi_phone_cn-user-13-TKQ1.220807.001-V13.1.22.9.30.DEV-release-keys
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -1293,14 +1294,28 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
+# IMSRCS - from cupid_DEV
+-system_ext/app/ImsRcsService/ImsRcsService.apk|93877b05f97ce9691f344b50512461b67a981b95
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|7ce9e6ccb5026b0aa87b0eb94a20448e2d4c481c
+system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar|ec58d15adf1930c4dcfb59e209a4bcf8d230a756
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar|3218cd7bba1dd0e0a140d93d252b96b8e2c81ae5
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|ae7015efe55d17b1caf0da0c2247dac6cfaaa272
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|137f296405fd5f8c036c511f1d186e7178c5d57f
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|70dbc40c581103970402959342ea250b6a1fb84b
+system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|517127c426fa94f28d97409bc7d07ca4cb92a9b0
+system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|c7ea95f134ca6dc2b569b8c9b1c9b433bb6dae0c
+system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f221e0dfbb89daab9cca03104f9a92b2fd9b15bc
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|22e32735cf0fe02319c80319fde8a5912fbbf308
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar|6f4e7a72d9a4f8cb9adbb2a3d3960db32392a4cd
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar|0de39d385e80aa368228fe289f1b324d25a9768d
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar|389005c44b98bcd2e051ae9f7cee537359099ecc
+system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar|d711276f07ff0fd81fc6a63ad018b3eaf85ef4c9
+system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar|f54828a81f02b1f9ff1379e34efb60d064aa27f6
+system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|e627b85a9268734c5e66adf67d18e6d3fb0bf1de
+
 # RIL (IMS)
 -system_ext/priv-app/ims/ims.apk
--system_ext/app/ImsRcsService/ImsRcsService.apk|7e29c11b52bce9bdb33d0ea364faa13150b8cd08
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
-system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system/etc/sysconfig/qti_whitelist.xml
 system/etc/permissions/privapp-permissions-qti.xml
 system_ext/lib64/lib-imsvideocodec.so
