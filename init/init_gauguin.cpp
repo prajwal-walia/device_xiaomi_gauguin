@@ -54,13 +54,6 @@ void load_gauguininpro() {
     property_override("bluetooth.device.default_name", "Mi 10i");
 }
 
-void load_miuicamera_properties() {
-    property_override("vendor.camera.aux.packagelist", "com.android.camera,org.codeaurora.snapcam");
-    property_override("persist.vendor.camera.privapp.list", "com.android.camera");
-    property_override("ro.com.google.lens.oem_camera_package", "com.android.camera");
-    property_override("ro.miui.notch", "1");
-}
-
 void vendor_load_properties() {
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
 
@@ -70,5 +63,4 @@ void vendor_load_properties() {
         load_gauguininpro();
     else if (region.find("GLOBAL") != std::string::npos)
         load_gauguin();
-    load_miuicamera_properties();
 }
