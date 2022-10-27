@@ -629,6 +629,8 @@ vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
+vendor/etc/ltm_config_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
+vendor/etc/ltm_config_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
 
 # Display Firmware
 vendor/firmware/NT36xxx_MP_Setting_Criteria_5935.csv
