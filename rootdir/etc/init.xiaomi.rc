@@ -50,6 +50,33 @@ on post-fs-data
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
 
+# NFC
+service qti_esepowermanager_service_1_1 /vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+    override
+    class hal
+    user system
+    group nfc system
+    disabled
+
+service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
+    override
+    class hal
+    user system
+    group system
+    disabled
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+on boot && property:ro.boot.product.hardware.sku=nfc
+    enable qti_esepowermanager_service_1_1
+    enable secureelement-hal_1_2
+    enable vendor.nfc_hal_service
+
 on charger
     wait /sys/class/power_supply/usb/type
     start mi_thermald
@@ -99,22 +126,11 @@ on property:vendor.camera.bokeh.disable=1
 on property:vendor.camera.bokeh.disable=0
     setprop persist.vendor.camera.bokeh.disable 0
 
-on property:ro.boot.product.hardware.sku=nfc
-    enable vendor.nfc_hal_service
-
 service nv_mac /vendor/bin/nv_mac
     class late_start
     user system
     group system inet net_admin wifi net_raw
     oneshot
-
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
-    override
-    class hal
-    user nfc
-    group nfc
-    writepid /dev/cpuset/system-background/tasks
-    disabled
 
 service mi_thermald /system/vendor/bin/mi_thermald
     class main
