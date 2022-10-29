@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from gauguin_global: gauguin_global-user 12 SKQ1.211006.001 V13.0.4.0.SJSMIXM release-keys
+# All unpinned blobs are extracted from gauguin_global-user 12 SKQ1.211006.001 V13.0.4.0.SJSMIXM release-keys
 # gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.6.0.SJSCNXM release-keys
 # cupid_DEV: cupid-missi_phone_cn-user-13-TKQ1.220807.001-V13.1.22.9.30.DEV-release-keys
 
@@ -710,13 +710,6 @@ vendor/lib64/libwvkeybox.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 
-# ESE
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
-
 # Feature Enabler Client
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
@@ -1376,13 +1369,18 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 
-# Secure Element
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/jcos_nq_client.so
-vendor/lib64/ls_nq_client.so
-vendor/lib64/se_nq_extn_client.so
+# SecureMSM (GPQESE) - from gauguin_CN
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|649bea818a6b865ab744ac0aae52657557199918
+vendor/bin/hw/vendor.qti.secure_element@1.2-service|3154e090b25eb04bb3150d7523a4c31f4126b8de
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|cb8e44a67709a5d9c2f0544058d79eb9f6faad7b
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|c6b853c5a008123490afeb103a979daf1eb42ee3
+vendor/lib64/android.hardware.secure_element@1.0-impl.so|8e480172d9e34e20345ca05cdfe86c0190a20bb8
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|1d9663e2ad911aa75da4b07a2b17dd023d4c796e
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|3e71c2927fe56732b081b6476df2efbd58d27178
+vendor/lib64/jcos_nq_client.so|b0430238ee9a9874e3702d2be5968539598a95d2
+vendor/lib64/ls_nq_client.so|a906a909d2ea16c2bb81dc263cc76a339459fda8
+vendor/lib64/se_nq_extn_client.so|1503c49d969167adb420d36d2712aa16c4875c2e
 
 # Sensors
 vendor/bin/sensors.qti
