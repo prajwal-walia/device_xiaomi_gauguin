@@ -151,11 +151,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt-V2
 
-PRODUCT_PACKAGES += \
-    libcamera2ndk_vendor \
-    libdng_sdk.vendor \
-    libgui_vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt
 

@@ -356,6 +356,8 @@ vendor/lib64/libwa_rtdof.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libanc_dc_base.so
+vendor/lib64/libcamera2ndk_vendor.so
+vendor/lib64/libgui_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|6fd2292303484d15d277d666cda1542dabe76db7
 
 # CameraX
