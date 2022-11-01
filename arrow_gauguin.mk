@@ -11,11 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from gauguin device
 $(call inherit-product, device/xiaomi/gauguin/device.mk)
 
-# Inherit common PixelOS configurations
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit common ArrowOS configurations
+$(call inherit-product, vendor/arrow/config/common.mk)
+
+DEVICE_MAINTAINER := Hridaya & Lynrinn
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_gauguin
+PRODUCT_NAME := arrow_gauguin
 PRODUCT_DEVICE := gauguin
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2007J17G

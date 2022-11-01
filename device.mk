@@ -26,7 +26,7 @@ TARGET_BOARD_PLATFORM := lito
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-pos \
+    $(LOCAL_PATH)/overlay-arrow \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
