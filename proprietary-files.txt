@@ -165,6 +165,10 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
+# Audiosphere
+system_ext/etc/permissions/audiosphere.xml
+system_ext/framework/audiosphere.jar
+
 # ANT+ - from LA.UM.9.12.r1-14100-SMxx50.0
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|ecdf9f24262c49031c470b14a27d3f99d2b47ff4
 
