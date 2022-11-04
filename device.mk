@@ -85,6 +85,8 @@ PRODUCT_PACKAGES += \
     libbundlewrapper \
     libcomprcapture \
     libdownmix \
+    libhdmipassthru \
+    libexthwplugin \
     libdynproc \
     libeffectproxy \
     libhdmiedid \
