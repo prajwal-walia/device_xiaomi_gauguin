@@ -26,7 +26,7 @@
 #
 
 on early-init
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_tfa98xx audio_cs35l41
+#    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_tfa98xx audio_cs35l41
 
 on fs
     mkdir /mnt/vendor/persist/camera 0777 root root
