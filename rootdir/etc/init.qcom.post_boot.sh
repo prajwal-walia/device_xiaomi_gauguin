@@ -3985,6 +3985,9 @@ case "$target" in
 
         # Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
+
+        # Turn on sleep modes
+        echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
         ;;
     esac
 
@@ -4129,6 +4132,9 @@ case "$target" in
 
         # Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
+
+        # Turn off sleep modes
+        echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
       ;;
     esac
 esac
@@ -5832,6 +5838,7 @@ case "$target" in
         # device/target specific folder
         setprop vendor.dcvs.prop 0
 	setprop vendor.dcvs.prop 1
+    echo N > /sys/module/lpm_levels/parameters/sleep_disabled
     configure_memory_parameters
     ;;
 esac
