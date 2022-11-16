@@ -999,12 +999,14 @@ vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 
+# Media C2 Configs - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
+vendor/etc/media_codecs_c2.xml|5c2ab87923210f36952b41c043b7f05b0674d7e5
+vendor/etc/media_codecs_performance_c2.xml|916853397f85e44accae49f7e1b112c97fe12381
+
 # Media-legacy
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/media_codecs_c2.xml
-vendor/etc/media_codecs_performance_c2.xml
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
 vendor/lib/libC2D2.so
