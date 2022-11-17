@@ -1,6 +1,6 @@
 # All unpinned blobs are extracted from gauguin_global-user 12 SKQ1.211006.001 V13.0.5.0.SJSMIXM release-keys
 # cupid_DEV: cupid-missi_phone_cn-user-13-TKQ1.220807.001-V13.1.22.9.30.DEV-release-keys
-# gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.6.0.SJSCNXM release-keys
+# gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.10.0.SJSCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -479,8 +479,8 @@ vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov8856_ultra.bin
 # Camera Sensors - from gauguin_CN
 vendor/lib64/camera/com.qti.sensormodule.ofilm_s5khm2.bin|be5314d0e809e6cc994f55a37ec8e36914f42cd8
 vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin|74d522fba7c741908c796cbbbcc6305d90f6f102
-vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|d109a04df27c764921ba268a834b7a876fa0a05c
-vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin|c40d3218e33890dc0a8da413b87587c20a34e02c
+vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|965830d7862f5f19f71038559ecd98f1a5a7e8a2
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin|3899cf12554ac35d98827bec77dcce0a44c752b2
 
 # Camera (Prebuilt)
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|50cbc9cf54dbda85bd343be541caade2272d5886
