@@ -58,7 +58,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
-TARGET_KERNEL_CONFIG := vendor/gauguin_user_defconfig
+TARGET_KERNEL_CONFIG := gauguin_defconfig
 TARGET_KERNEL_CLANG_VERSION := r437112b
 
 # Audio
