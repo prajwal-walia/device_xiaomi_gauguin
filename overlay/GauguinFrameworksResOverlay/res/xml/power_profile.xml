@@ -30,32 +30,35 @@
   <!-- This is the battery capacity in mAh (measured at nominal voltage) -->
     <item name="battery.capacity">4820</item>
 
-    <item name="bluetooth.active">3.79</item>
-    <item name="bluetooth.on">0.45</item>
-    <item name="wifi.on">0.25</item>
-    <item name="wifi.active">236.16</item>
-    <item name="wifi.scan">27.1</item>
-    <item name="audio">21.62</item>
-    <item name="video">59.87</item>
-    <item name="camera.flashlight">94.44</item>
-    <item name="camera.avg">768.51</item>
-    <item name="gps.on">77.51</item>
+    <item name="bluetooth.active">93</item>
+    <item name="bluetooth.on">0.65</item>
+    <item name="wifi.on">0.1</item>
+    <item name="wifi.active">156</item>
+    <item name="wifi.scan">1</item>
+    <item name="audio">26</item>
+    <item name="video">66</item>
+    <item name="camera.flashlight">620</item>
+    <item name="camera.avg">410</item>
+    <item name="gps.on">5</item>
 
 
   <!-- Radio related values. For modems without energy reporting support in firmware, use
        radio.active, radio.scanning, and radio.on. -->
-    <item name="radio.active">197.88</item>
-    <item name="radio.scanning">90.13</item>
+    <item name="radio.active">171</item>
+    <item name="radio.scanning">6</item>
     <array name="radio.on">
-        <value>1.16</value>
-        <value>2.16</value>
+        <value>88</value>
+        <value>8</value>
     </array>
 
   <!-- Cellular modem related values. Default is 0.-->
-    <item name="modem.controller.idle">0</item>
-    <item name="modem.controller.rx">0</item>
-    <item name="modem.controller.tx">0</item>
-    <item name="modem.controller.voltage">0</item>
+    <item name="modem.controller.idle">6</item>
+    <item name="modem.controller.rx">221</item>
+    <item name="modem.controller.tx">203</item>
+    <item name="modem.controller.voltage">3700</item>
+    <array name="memory.bandwidths">
+        <value>16.5</value>
+    </array>
 
   <!-- A list of heterogeneous CPU clusters, where the value for each cluster represents the
        number of CPU cores for that cluster.
@@ -134,29 +137,34 @@
 
   <!-- Additional power consumption by CPU excluding cluster and core when
        running -->
-    <item name="cpu.awake">9.42</item>
+    <item name="cpu.active">8.5</item>
   <!-- Current when CPU is idle -->
-    <item name="cpu.idle">5.34</item>
+    <item name="cpu.idle">0.1</item>
+  <!-- Current when CPU is suspend -->
+  <item name="cpu.suspend">0</item>
 
   <!-- Wifi related values. -->
   <!-- Idle Receive current for wifi radio in mA. 0 by default-->
-    <item name="wifi.controller.idle">0</item>
+    <item name="wifi.controller.idle">1</item>
   <!-- Rx current for wifi radio in mA. 0 by default-->
-    <item name="wifi.controller.rx">0</item>
+    <item name="wifi.controller.rx">127</item>
   <!-- Tx current for wifi radio in mA. 0 by default-->
-    <item name="wifi.controller.tx">0</item>
+    <item name="wifi.controller.tx">168</item>
   <!-- Current at each of the wifi Tx levels in mA. The number of tx levels varies per device
        and is available only of wifi chipsets which support the tx level reporting. Use
        wifi.tx for other chipsets. none by default -->
-    <array name="wifi.controller.tx_levels" />
+    <array name="wifi.controller.tx_levels">1 </array>
   <!-- Operating volatage for wifi radio in mV. 0 by default-->
-    <item name="wifi.controller.voltage">0</item>
+    <item name="wifi.controller.voltage">3700</item>
 
     <array name="wifi.batchedscan">
-        <value>.0002</value>
-        <value>.002</value>
-        <value>.02</value>
-        <value>.2</value>
-        <value>2</value>
+        <value>.0001</value>
+        <value>.001</value>
+        <value>.01</value>
+        <value>.1</value>
+        <value>1</value>
     </array>
+
+  <!-- Operating volatage for bluetooth in mV. 0 by default-->
+  <item name="bluetooth.controller.voltage">3700</item>
 </device>
