@@ -26,17 +26,20 @@ TARGET_BOARD_PLATFORM := lito
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pos
+
+PRODUCT_PACKAGES += \
+    GauguinCarrierConfigOverlay \
+    GauguinFrameworksResOverlay \
+    GauguinSettingsOverlay \
+    GauguinSystemUIOverlay \
+    GauguinTelephonyOverlay  \
+    GauguinWifiOverlay
 
 PRODUCT_PACKAGES += \
     SettingsOverlayM2007J17C \
     SettingsOverlayM2007J17G \
     SettingsOverlayM2007J17I
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
