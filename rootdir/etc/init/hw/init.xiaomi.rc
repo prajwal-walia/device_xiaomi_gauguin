@@ -51,7 +51,6 @@ on init
     chmod 0777 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dynamic_dsi_clock
 
 on post-fs-data
-    mkdir /data/vendor/nfc 0770 nfc nfc
     mkdir /data/vendor/mac_addr 0770 system wifi
 
     mkdir /data/vendor/thermal 0771 root system
