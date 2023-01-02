@@ -705,16 +705,6 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
-# FM - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
-system_ext/lib64/fm_helium.so|385d0e6c7d925c08518586ab09aec546b1d9e691
-system_ext/lib64/libfm-hci.so|ec8d05156d506777969c96cd6c6a2a23fbf64195
--system_ext/lib64/vendor.qti.hardware.fm@1.0.so|ef9f1ae5e38838bfd057e451339d10bc051aae26
-vendor/bin/fm_qsoc_patches|30ccda8ea2c06a64a0617a9b5d2569cbc1db2e16
-vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
-vendor/etc/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d117bae0207eb9a7c0aff115593bbbf9461688a7
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|19fcbfe03d4b6304af9b01b89ab8fc6f9968d87b
-
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
