@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
     audio.usbv2.default
 
 PRODUCT_PACKAGES += \
-    libaacwrapper \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
