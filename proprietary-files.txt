@@ -198,7 +198,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.1.so|a720c2ce5aec53c3f292020f
 # Bluetooth - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|b0f73b4ac1a88607ec90b514b9602de423bb9be6
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6a950eaa3066fcba19e1d94a04e5823059a951a8
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|d117bae0207eb9a7c0aff115593bbbf9461688a7
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|b0ef18cbc1e73b1db9595d2c3c9062c9fc6c791d
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6afb681f9876d632c1369b11672a46e5d56b28c7
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|473f93f5d500186121d4b844b388a83e1e22297d
@@ -207,6 +207,7 @@ vendor/lib64/libbt-hidlclient.so|13e7ae0f423841ea5d6b722446acad3bbebf89ee
 vendor/lib64/libbtnv.so|7973f6eeaa23f85709682e6fca66d589f514563d
 vendor/lib64/libsoc_helper.so|cdd194a76c1ff4836411babeb329090c4eae8d3b
 vendor/lib64/libsoc_helper_jni.so|1ed6ebd7bd154e481617ce98273139d2b916094b
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|19fcbfe03d4b6304af9b01b89ab8fc6f9968d87b
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|52b83b6f371a49d866276aabc5d6bda4faa400b6
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|8d098cef4c4442f9aa2c64389be5eba32003dcce
 
