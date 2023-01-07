@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from gauguin_global-user 12 SKQ1.211006.001 V13.0.5.0.SJSMIXM release-keys
+# All unpinned blobs are extracted from gauguin_global-user 12 SKQ1.211006.001 V13.0.7.0.SJSMIXM release-keys
 # cupid_DEV: cupid-missi_phone_cn-user-13-TKQ1.220807.001-V13.1.22.9.30.DEV-release-keys
 # gauguin_CN: gauguinpro-user 12 SKQ1.211006.001 V13.0.10.0.SJSCNXM release-keys
 
