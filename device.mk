@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libstagefright_softomx.vendor \
+    libstagefright_foundation \
     libstagefright_omx \
     libstagefright_enc_common
 
