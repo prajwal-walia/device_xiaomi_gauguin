@@ -468,7 +468,7 @@ PRODUCT_COPY_FILES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libwatermark_shim \
+    libpiex_shim \
     libweakcount_shim
 
 # Telephony

@@ -5,12 +5,6 @@
 //
 
 cc_library_shared {
-    name: "libwatermark_shim",
-    srcs: ["libwatermark_shim.c"],
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libweakcount_shim",
     srcs: ["libweakcount_shim.c"],
     vendor: true,
