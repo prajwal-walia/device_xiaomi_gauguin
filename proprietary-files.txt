@@ -325,7 +325,7 @@ vendor/lib64/libwa_dof.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libxmi_hdr_checker.so
 vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|6fd2292303484d15d277d666cda1542dabe76db7
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # CameraX
 vendor/lib/libcamxexternalformatutils.so
@@ -373,7 +373,7 @@ vendor/lib64/camera/components/com.mi.node.distortioncorrection.so
 vendor/lib64/camera/components/com.mi.node.hdr.so
 vendor/lib64/camera/components/com.mi.node.mimovie.so
 vendor/lib64/camera/components/com.mi.node.skinbeautifier.so
-vendor/lib64/camera/components/com.mi.node.superlowlightraw.so|73e4b70658e0a81d64ce8e57e13f520aa7040e80
+vendor/lib64/camera/components/com.mi.node.superlowlightraw.so
 vendor/lib64/camera/components/com.mi.node.videobokeh.so
 vendor/lib64/camera/components/com.mi.node.watermark.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
@@ -472,7 +472,7 @@ vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|965830d7862f5f19
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin|3899cf12554ac35d98827bec77dcce0a44c752b2
 
 # Camera (Prebuilt)
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64|50cbc9cf54dbda85bd343be541caade2272d5886
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/android.hardware.camera.provider@2.4-external.so
