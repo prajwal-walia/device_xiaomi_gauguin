@@ -88,6 +88,7 @@ bluetooth.profile.sap.server.enabled?=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+vendor.hw.fm.init=0
 
 # Camera
 camera.disable_zsl_mode=true
