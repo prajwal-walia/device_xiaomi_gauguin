@@ -233,3 +233,6 @@ persist.vendor.delta_time.enable=true
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Variant specific props
+import /vendor/vendor.${ro.boot.hwc}.prop

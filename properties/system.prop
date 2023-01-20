@@ -77,3 +77,6 @@ arm64.memtag.process.system_server=off
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
+
+# Variant specific props
+import /system/system.${ro.boot.hwc}.prop

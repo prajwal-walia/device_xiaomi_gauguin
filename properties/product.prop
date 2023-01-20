@@ -11,3 +11,6 @@ persist.bluetooth.a2dp_aac.vbr_supported=true
 # SoC
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7225
+
+# Variant specific props
+import /product/product.${ro.boot.hwc}.prop

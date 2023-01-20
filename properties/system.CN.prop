@@ -1,0 +1,18 @@
+#
+# CN variant specific props
+#
+
+ro.build.product=gauguinpro
+ro.product.brand=Xiaomi
+ro.product.board=gauguinpro
+ro.product.marketname=Redmi Note 9 Pro
+ro.product.device=gauguinpro
+ro.product.model=M2007J17C
+ro.product.name=gauguinpro
+ro.product.system.brand=Redmi
+ro.product.system.device=gauguinpro
+ro.product.system.model=M2007J17C
+ro.product.system.name=gauguinpro
+ro.product.system.marketname=Redmi Note 9 Pro
+ro.system.build.fingerprint=Redmi/gauguin/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSCNXM:user/release-keys
+ro.bootimage.build.fingerprint=Redmi/gauguin/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSCNXM:user/release-keys
