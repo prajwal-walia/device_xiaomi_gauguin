@@ -143,7 +143,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libbthost_if.vendor \
     libldacBT_enc \
-    libldacBT_abr
+    libldacBT_abr \
+    libldacBT_bco \
+    libldacBT_bco.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
