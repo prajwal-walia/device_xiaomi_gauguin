@@ -235,6 +235,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.display.config</name>
+    <version>1.5-11</version>
     <version>2.0</version>
     <interface>
         <name>IDisplayConfig</name>
@@ -326,6 +327,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.qti.hardware.btconfigstore</name>
+    <version>1.0</version>
     <version>2.0</version>
     <interface>
         <name>IBTConfigStore</name>
@@ -610,6 +612,14 @@
     <version>1.0-1</version>
     <interface>
         <name>IMlipayService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.qti.hardware.fm</name>
+    <version>1.0</version>
+    <interface>
+        <name>IFmHci</name>
         <instance>default</instance>
     </interface>
 </hal>
