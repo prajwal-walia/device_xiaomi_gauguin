@@ -79,17 +79,6 @@ TARGET_SCREEN_DENSITY := 440
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/hidl/xiaomi_manifest.xml \
-    $(DEVICE_PATH)/configs/hidl/lineage_manifest.xml \
-    $(DEVICE_PATH)/configs/hidl/manifest.xml
-
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
-ODM_MANIFEST_SKUS += nfc
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_gauguin
 TARGET_RECOVERY_DEVICE_MODULES := libinit_gauguin
@@ -187,6 +176,17 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Vibrator
 HAPTICS_OFFLOAD_SUPPORT := false
 USE_EFFECT_STREAM := false
+
+# Vintf
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/xiaomi_manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/lineage_manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
+ODM_MANIFEST_SKUS += nfc
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
