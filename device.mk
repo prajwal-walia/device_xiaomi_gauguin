@@ -132,9 +132,8 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio@2.1-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -255,9 +254,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libhidltransport \
     libhidltransport.vendor \
-    libhwbinder \
     libhwbinder.vendor
 
 # IDC
@@ -325,10 +322,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libstagefright_softomx.vendor \
-    libstagefright_foundation \
-    libstagefright_omx \
-    libstagefright_enc_common
+    libavservices_minijail_vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -383,10 +377,6 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service \
-    libc2dcolorconvert \
-    libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -427,7 +417,9 @@ PRODUCT_PACKAGES += \
 
 # QTI
 PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
 # RenderScript
