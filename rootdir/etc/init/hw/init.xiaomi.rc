@@ -86,14 +86,7 @@ on boot && property:ro.boot.product.hardware.sku=nfc
     enable secureelement-hal_1_2
     enable vendor.nfc_hal_service
 
-on charger
-    wait /sys/class/power_supply/usb/type
-    start mi_thermald
-
 on boot
-    wait /sys/class/power_supply/usb/type
-    start mi_thermald
-
     chown system system /sys/class/touch/touch_dev/palm_sensor
 
     # Create persist for camera calibration data
@@ -140,11 +133,6 @@ service nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
-
-service mi_thermald /system/vendor/bin/mi_thermald
-    class main
-    user root
-    group system
 
 on property:init.svc.vendor.nv_mac=stopped
     start vendor.btmac-sh
