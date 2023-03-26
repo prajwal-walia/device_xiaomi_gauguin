@@ -35,7 +35,7 @@ void load_gauguin() {
 
 void load_gauguinpro() {
     property_override("ro.product.mod_device", "gauguin_global");
-    property_override("ro.build.fingerprint", "Redmi/gauguin/gauguin:12/RKQ1.200826.002/V13.0.10.0.SJSCNXM:user/release-keys");
+    property_override("ro.build.fingerprint", "Redmi/gauguin/gauguin:12/RKQ1.200826.002/V14.0.2.0.SJSCNXM:user/release-keys");
     property_override("ro.product.brand", "Redmi");
     property_override("ro.product.device", "gauguinpro");
     property_override("ro.product.model", "M2007J17C");

@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from gauguin-user 12 RKQ1.200826.002 V13.0.15.0.SJSCNXM release-keys
+# All unpinned blobs are extracted from gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 # gauguin_GL: gauguin_global-user 12 SKQ1.211006.001 V13.0.7.0.SJSMIXM release-keys
 # motorola_nio: motorola_nio-user 12 S1RTS32.41-20-16-1-7-0aa7b release-keys
 
