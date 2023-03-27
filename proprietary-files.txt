@@ -89,27 +89,8 @@ vendor/lib/libssrec.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 
-# Audio configs
-vendor/etc/audio_platform_info.xml
-vendor/etc/audio_platform_info_intcodec.xml
-vendor/etc/audio_platform_info_lagoon_qrd.xml
-vendor/etc/audio_platform_info_qrd.xml
+# Audio calibration
 vendor/etc/cs35l41_cal.wav
-vendor/etc/default_volume_tables.xml
-vendor/etc/mixer_paths.xml
-vendor/etc/mixer_paths_cdp.xml
-vendor/etc/mixer_paths_lagoonmtp.xml
-vendor/etc/mixer_paths_lagoonqrd.xml
-vendor/etc/mixer_paths_mtp.xml
-vendor/etc/mixer_paths_overlay_dynamic.xml
-vendor/etc/mixer_paths_overlay_static.xml
-vendor/etc/mixer_paths_qrd.xml
-vendor/etc/sound_trigger_mixer_paths.xml
-vendor/etc/sound_trigger_mixer_paths_cdp.xml
-vendor/etc/sound_trigger_mixer_paths_lagoonmtp.xml
-vendor/etc/sound_trigger_mixer_paths_lagoonqrd.xml
-vendor/etc/sound_trigger_mixer_paths_qrd.xml
-vendor/etc/sound_trigger_platform_info.xml
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
