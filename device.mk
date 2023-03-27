@@ -423,6 +423,8 @@ PRODUCT_PACKAGES += \
     libjson
 
 # QTI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
