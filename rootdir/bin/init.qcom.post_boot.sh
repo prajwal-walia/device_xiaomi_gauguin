@@ -43,19 +43,6 @@ case "$target" in
         # disable unfiltering
         echo 20000000 > /proc/sys/kernel/sched_task_unfilter_period
 
-        # Setting b.L scheduler parameters
-        # default sched up and down migrate values are 95 and 85
-        echo 65 > /proc/sys/kernel/sched_downmigrate
-        echo 71 > /proc/sys/kernel/sched_upmigrate
-
-        # default sched up and down migrate values are 100 and 95
-        echo 85 > /proc/sys/kernel/sched_group_downmigrate
-        echo 100 > /proc/sys/kernel/sched_group_upmigrate
-        echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-        echo 0 > /proc/sys/kernel/sched_coloc_busy_hyst_ns
-        echo 0 > /proc/sys/kernel/sched_coloc_busy_hysteresis_enable_cpus
-        echo 0 > /proc/sys/kernel/sched_coloc_busy_hyst_max_ms
-
         # configure governor settings for little cluster
         echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
         echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
