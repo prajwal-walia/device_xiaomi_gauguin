@@ -129,6 +129,9 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
+# Platform
+BOARD_VENDOR := xiaomi
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
