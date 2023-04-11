@@ -130,16 +130,6 @@ on charger
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
-on property:vendor.audio.cit.spkcal.copy=true
-    copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
-    copy /data/vendor/cit/cs35l41_cal_right.bin /mnt/vendor/persist/audio/cs35l41_cal_right.bin
-    copy /data/vendor/cit/cs35l41_cal.txt /mnt/vendor/persist/audio/cs35l41_cal.txt
-    copy /data/vendor/cit/cs35l41_cal_right.txt /mnt/vendor/persist/audio/cs35l41_cal_right.txt
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.bin
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.bin
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.txt
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal_right.txt
-
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
 
