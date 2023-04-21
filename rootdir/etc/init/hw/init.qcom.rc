@@ -38,14 +38,6 @@ on early-init
     symlink /vendor/bt_firmware /bt_firmware
     symlink /vendor/dsp /dsp
 
-    # Change ownership of sysfs power control node
-    chown system graphics /sys/class/drm/card0/device/power/control
-
-on init
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-    symlink /sdcard /storage/sdcard0
-
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -97,17 +89,23 @@ on boot
 
 on post-fs-data
     # msm specific files that need to be created on /data
+    mkdir /data/vendor/audio 0771 audio audio
+    mkdir /data/vendor/tombstones 0771 system system
+    mkdir /data/vendor/tombstones/rfs 0771 system system
+    mkdir /data/vendor/ramdump 0771 root system
+    mkdir /data/vendor/thermal 0771 root system
+    mkdir /data/vendor/thermal/config 0771 root system
     mkdir /data/vendor/display 0770 system graphics
     mkdir /data/vendor/media 0770 mediacodec media
     mkdir /data/vendor/tzstorage 0770 system system
     mkdir /data/vendor/qtee 0770 system system
     mkdir /data/vendor/camera 0770 camera camera
-    mkdir /data/vendor/tombstones 0771 system system
-    mkdir /data/vendor/tombstones/rfs 0771 system system
-    mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
+    mkdir /data/vendor/time/ 0700 system system
+    mkdir /data/vendor/secure_element 0777 system system
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/vpp 0770 media media
+    mkdir /data/vendor/tui 0700 system drmrpc
 
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/wifi 0771 wifi wifi
@@ -122,12 +120,6 @@ on post-fs-data
     # Create the directories used by CnE subsystem
     mkdir /data/vendor/connectivity 0771 radio radio
     chown radio radio /data/vendor/connectivity
-
-    # Create directory used by audio subsystem
-    mkdir /data/vendor/audio 0771 audio audio
-
-    # Create directory used by audio cit
-    mkdir /data/vendor/cit 0770 system system
 
     # Create directory for audio delta files
     mkdir /data/vendor/audio/acdbdata 0770 media audio
@@ -152,19 +144,6 @@ on post-fs-data
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
-    # Create /data/vendor/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
-    mkdir /data/vendor/secure_element 0777 system system
-
-    mkdir /data/vendor/nfc 0770 nfc nfc
-
-    # Create vpp directory
-    mkdir /data/vendor/vpp 0770 media media
-
-    #Create dir for TUI
-    mkdir /data/vendor/tui 0700 system drmrpc
-
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
     chown radio radio /data/vendor/radio/copy_complete
@@ -182,25 +161,6 @@ on post-fs-data
     write /data/vendor/radio/db_check_done 0
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
-
-    #add torch node for cit
-    chown system system /sys/class/leds/led:torch_0/brightness
-    chown system system /sys/class/leds/led:torch_1/brightness
-    chown system system /sys/class/leds/led:flash_0/brightness
-    chown system system /sys/class/leds/led:flash_1/brightness
-    chown system system /sys/class/leds/led:switch_0/brightness
-    chown system system /sys/class/leds/led:switch_1/brightness
-    chown system system /sys/class/leds/led:switch_2/brightness
-    chown system system /sys/class/leds/flashlight/brightness
-
-    chmod 0664 /sys/class/leds/led:torch_0/brightness
-    chmod 0664 /sys/class/leds/led:torch_1/brightness
-    chmod 0664 /sys/class/leds/led:flash_0/brightness
-    chmod 0664 /sys/class/leds/led:flash_1/brightness
-    chmod 0664 /sys/class/leds/led:switch_0/brightness
-    chmod 0664 /sys/class/leds/led:switch_1/brightness
-    chmod 0664 /sys/class/leds/led:switch_2/brightness
-    chmod 0664 /sys/class/leds/flashlight/brightness
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
