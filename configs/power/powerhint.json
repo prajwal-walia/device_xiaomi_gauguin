@@ -13,7 +13,6 @@
         "1516800",
         "1612801"
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -23,6 +22,7 @@
         "9999999",
         "575999",
         "1248000",
+	"1804800",
         "1324800",
         "576000"
       ],
@@ -44,7 +44,6 @@
         "1900801"
 
       ],
-      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -54,6 +53,7 @@
         "9999999",
         "1900800",
         "1766400",
+	"1036800",
         "1401600",
         "787200"
       ],
@@ -122,37 +122,10 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneBoost",
-      "Path": "/dev/stune/top-app/schedtune.boost",
-      "Values": [
-        "30",
-        "10"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TASchedtuneHighCap",
-      "Path": "/dev/stune/top-app/schedtune.prefer_high_cap",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CDCpusetCpus",
       "Path": "/dev/cpuset/camera-daemon/cpus",
       "Values": [
         "0-5",
-        "0-7"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CDDCpusetCpus",
-      "Path": "/dev/cpuset/camera-daemon-dedicated/cpus",
-      "Values": [
-        "6-7",
         "0-7"
       ],
       "ResetOnInit": true
@@ -363,25 +336,13 @@
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 1000,
-      "Value": "1766400"
+      "Value": "1036800"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1000,
-      "Value": "1324800"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneBoost",
-      "Duration": 1000,
-      "Value": "30"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneHighCap",
-      "Duration": 1000,
-      "Value": "1"
+      "Value": "1804800"
     },
     {
       "PowerHint": "INTERACTION",
@@ -415,27 +376,15 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "TASchedtuneHighCap",
-      "Duration": 3000,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 3000,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 3000,
-      "Value": "9999999"
+      "Value": "1036800"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
-      "Value": "9999999"
+      "Value": "1804800"
     },
     {
       "PowerHint": "LAUNCH",
