@@ -73,8 +73,6 @@ on init
     # to access UFS/eMMC sysfs directly
     symlink /sys/devices/platform/${ro.boot.boot_devices} /dev/sys/block/bootdevice
 
-    # Disable UFS clock scaling
-    write /dev/sys/block/bootdevice/clkscale_enable 0
     # Disable UFS auto_hibern8
     write /dev/sys/block/bootdevice/auto_hibern8 0
     # Disable UFS clock gating
