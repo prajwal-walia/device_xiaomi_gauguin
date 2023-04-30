@@ -24,10 +24,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/gauguin-miuicamera/products/miui
 
 TARGET_BOARD_PLATFORM := lito
 
-# Debug options
-GAUGUIN_DEBUG := false
-include $(LOCAL_PATH)/vendor_logging.mk
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-pos \
