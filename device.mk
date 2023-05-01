@@ -277,6 +277,11 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
 
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -387,18 +392,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-parts.xml
-
-PRODUCT_PACKAGES += \
-    e2fsck_ramdisk \
-    tune2fs_ramdisk \
-    resize2fs_ramdisk
 
 # Perf
 PRODUCT_COPY_FILES += \
