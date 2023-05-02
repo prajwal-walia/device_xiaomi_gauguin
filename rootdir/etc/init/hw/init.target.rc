@@ -108,7 +108,6 @@ on late-fs
     mount_all --late
 
 on post-fs-data
-    mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/misc/display 0771 system system
     chown system system /mnt/vendor/persist/display
 
