@@ -108,12 +108,6 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v2
 
-# Dalvik
-dalvik.vm.image-dex2oat-filter=speed
-dalvik.vm.image-dex2oat-threads=8
-dalvik.vm.dex2oat-filter=speed
-dalvik.vm.dex2oat-threads=8
-
 # Display
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_client_composition_cache=1

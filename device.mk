@@ -61,9 +61,6 @@ PRODUCT_TARGET_VNDK_VERSION := $(PRODUCT_SHIPPING_API_LEVEL)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
