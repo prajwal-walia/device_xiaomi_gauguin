@@ -20,9 +20,6 @@ persist.data.df.iwlan_mux=9
 # Display
 qemu.sf.lcd_density=440
 
-# LMK
-ro.config.low_ram=false
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 mm.enable.smoothstreaming=true
