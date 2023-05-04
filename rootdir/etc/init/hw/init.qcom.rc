@@ -168,11 +168,6 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     user system
     oneshot
 
-on property:persist.vendor.ssr.enable_ramdumps=1
-    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
-    mkdir /data/vendor/ramdump_ssr 770 system system
-#   start vendor.ss_ramdump
-
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed"
 
@@ -227,6 +222,17 @@ service qcom-sh /vendor/bin/init.qcom.sh
     user root
     group root system radio
     oneshot
+
+on property:persist.vendor.ssr.restart_level=*
+    start vendor.ssr_setup
+
+on property:persist.vendor.ssr.enable_ramdumps=1
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
+    mkdir /data/vendor/ramdump_ssr 770 system system
+    start vendor.ss_ramdump
+
+on property:persist.vendor.ssr.enable_ramdumps=0
+    write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1

@@ -229,6 +229,7 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # SSR
 persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
