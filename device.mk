@@ -189,6 +189,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc/)
+
 # Display Config
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/displayconfig/,$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig)
