@@ -2,6 +2,7 @@
 # GLOBAL variant specific props
 #
 
+ro.boot.product.vendor.sku=nfc
 ro.build.product=gauguin
 ro.product.brand=Xiaomi
 ro.product.board=gauguin
