@@ -2,6 +2,7 @@
 # GLOBAL variant specific props
 #
 
+bluetooth.device.default_name=Mi 10T Lite
 ro.product.product.brand=Xiaomi
 ro.product.product.device=gauguin
 ro.product.product.model=M2007J17G

@@ -2,6 +2,7 @@
 # CN variant specific props
 #
 
+bluetooth.device.default_name=Redmi Note 9 Pro
 ro.product.product.brand=Redmi
 ro.product.product.device=gauguinpro
 ro.product.product.model=M2007J17C

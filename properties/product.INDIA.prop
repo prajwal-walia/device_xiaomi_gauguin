@@ -2,6 +2,7 @@
 # INDIA variant specific props
 #
 
+bluetooth.device.default_name=Mi 10i
 ro.product.product.brand=Xiaomi
 ro.product.product.device=gauguininpro
 ro.product.product.model=M2007J17I
