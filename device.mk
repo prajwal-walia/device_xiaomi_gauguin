@@ -37,6 +37,11 @@ PRODUCT_PACKAGES += \
     GauguinTelephonyOverlay  \
     GauguinWifiOverlay
 
+PRODUCT_PACKAGES += \
+    SettingsOverlayM2007J17C \
+    SettingsOverlayM2007J17G \
+    SettingsOverlayM2007J17I
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
