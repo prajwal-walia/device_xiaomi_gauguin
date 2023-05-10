@@ -25,13 +25,11 @@ $(call inherit-product-if-exists, vendor/xiaomi/gauguin-miuicamera/products/miui
 TARGET_BOARD_PLATFORM := lito
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-arrow \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
+    GauguinApertureOverlay \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksResOverlay \
+    GauguinRefreshRateOverlay \
     GauguinSettingsOverlay \
     GauguinSystemUIOverlay \
     GauguinTelephonyOverlay  \
