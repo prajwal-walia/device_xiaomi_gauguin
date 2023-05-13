@@ -26,7 +26,6 @@ TARGET_BOARD_PLATFORM := lito
 
 # Overlays
 PRODUCT_PACKAGES += \
-    GauguinApertureOverlay \
     GauguinCarrierConfigOverlay \
     GauguinFrameworksResOverlay \
     GauguinRefreshRateOverlay \
