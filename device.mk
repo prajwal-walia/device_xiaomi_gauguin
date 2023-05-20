@@ -142,6 +142,9 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V3_8
+
+PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
     libgui_vendor
