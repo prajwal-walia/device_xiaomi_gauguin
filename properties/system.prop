@@ -35,6 +35,7 @@ persist.vendor.data.mode=concurrent
 
 # system props for time-services
 persist.timed.enable=true
+persist.vendor.delta_time.enable=true
 
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
@@ -63,11 +64,21 @@ ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 
+# IMS
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
+
+# SSR
+persist.vendor.ssr.enable_ramdumps=1
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # Vsync
 debug.cpurend.vsync=false
@@ -75,7 +86,7 @@ debug.cpurend.vsync=false
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
 
-#Disable MTE Async for system server
+# Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 
 # Vendor

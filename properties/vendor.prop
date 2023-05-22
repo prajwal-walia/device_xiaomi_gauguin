@@ -178,7 +178,6 @@ persist.sys.fuse.passthrough.enable=true
 # IMS
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.vdp_on_ims_cap=1
-persist.vendor.qti.telephony.vt_cam_interface=2
 
 # Keystore
 ro.hardware.keystore_desede=true
@@ -197,7 +196,6 @@ persist.rcs.supported=0
 
 # RIL
 ro.vendor.radio.features_common=3
-persist.radio.dynamic_sar=false
 persist.radio.multisim.config=dsds
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.cdma_cap=true
@@ -225,16 +223,6 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 # Sensor
 persist.vendor.sensors.odl.adsp=true
 persist.vendor.sensors.allow_non_default_discovery=true
-
-# SSR
-persist.vendor.ssr.enable_ramdumps=1
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
-# Thermal
-vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# Time
-persist.vendor.delta_time.enable=true
 
 # Zygote
 zygote.critical_window.minute=10
