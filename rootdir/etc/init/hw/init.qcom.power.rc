@@ -15,6 +15,11 @@
 #
 
 on property:vendor.setup.power=1
+    # Enable UFS auto_hibern8 back
+    write /dev/sys/block/bootdevice/auto_hibern8 5000
+    # Enable UFS clock gating back
+    write /dev/sys/block/bootdevice/clkgate_enable 1
+
     # Enable EAS
     write /proc/sys/kernel/sched_downmigrate_boosted 25
     write /proc/sys/kernel/sched_upmigrate_boosted 25
