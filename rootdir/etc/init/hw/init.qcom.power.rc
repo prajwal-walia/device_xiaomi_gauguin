@@ -21,10 +21,6 @@ on property:vendor.setup.power=1
     write /dev/sys/block/bootdevice/clkgate_enable 1
 
     # Enable EAS
-    write /proc/sys/kernel/sched_downmigrate_boosted 25
-    write /proc/sys/kernel/sched_upmigrate_boosted 25
-    write /proc/sys/kernel/sched_upmigrate 95
-    write /proc/sys/kernel/sched_downmigrate 85
     write /proc/sys/kernel/sched_energy_aware 1
 
     # Enable bus-dcvs
@@ -117,9 +113,6 @@ on property:vendor.setup.power=1
 
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/governor compute
     write /sys/devices/platform/soc/soc:qcom,cpu6-cpu-ddr-latfloor/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/polling_interval 8
-
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_filter_ratio 25000
-    write /sys/devices/platform/soc/18321000.qcom,devfreq-l3/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/devfreq/18321000.qcom,devfreq-l3:qcom,cpu6-cpu-l3-lat/wb_pct_thres 60
 
     # Enable idle state listener
     write /sys/class/drm/card0/device/idle_encoder_mask 1
