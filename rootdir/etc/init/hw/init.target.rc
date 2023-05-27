@@ -124,6 +124,9 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
+    # Setup cpusets for audio-app
+    write /dev/cpuset/audio-app/cpus 1-2
+
     # Setup runtime schedTune
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.prefer_high_cap 0
