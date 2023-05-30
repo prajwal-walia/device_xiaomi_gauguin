@@ -93,10 +93,6 @@ debug.hwui.skia_atrace_enabled=false
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
 
-# Display
-persist.lcd.cabc_mode=1
-persist.lcd.hbm_mode=0
-
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
